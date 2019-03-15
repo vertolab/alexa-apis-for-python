@@ -23,7 +23,7 @@ from enum import Enum
 if typing.TYPE_CHECKING:
     from typing import Dict, List, Optional
     from datetime import datetime
-    from ask_sdk_model.services.reminder_management.spoken_info import SpokenInfo
+    from ask_sdk_model.services.reminder_management import SpokenInfo
 
 
 class AlertInfo(object):
@@ -32,11 +32,11 @@ class AlertInfo(object):
 
 
     :param spoken_info: 
-    :type spoken_info: (optional) ask_sdk_model.services.reminder_management.spoken_info.SpokenInfo
+    :type spoken_info: (optional) ask_sdk_model.services.reminder_management.SpokenInfo
 
     """
     deserialized_types = {
-        'spoken_info': 'ask_sdk_model.services.reminder_management.spoken_info.SpokenInfo'
+        'spoken_info': 'ask_sdk_model.services.reminder_management.SpokenInfo'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class AlertInfo(object):
         """Alert info for VUI / GUI
 
         :param spoken_info: 
-        :type spoken_info: (optional) ask_sdk_model.services.reminder_management.spoken_info.SpokenInfo
+        :type spoken_info: (optional) ask_sdk_model.services.reminder_management.SpokenInfo
         """
         self.__discriminator_value = None
 
